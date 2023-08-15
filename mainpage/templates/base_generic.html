@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        {% block title%}
+        <title>Plants</title>
+        {% endblock %}
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        {% block sidebar%}
+        <div class="navbar">
+            <div class="navbar_container">
+                <div class="navbar_wrap">
+                    <div class="hamb">
+                        <div class="hamb_field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    {% load static %}
+                    <a id="hamb_logo" class="hamb_logo" href="#"><img src="{% static 'assets/tree_logo.svg'%}" alt="">Plants</a>
+                    <ul class="hamb_menu" id="hamb_menu">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Plants Care</a></li>   
+                    </ul>
+                <div class = "search__items">
+                    {% load static %}
+                        <a href="#"><img src="{% static 'assets/search_button.svg' %}" alt=""></a>
+                    {% load static %}
+                        <a href="#"><img src="{% static 'assets/sell_button.svg' %}" alt=""></a>
+                    {% load static %}
+                        <a href="#"><img src="{% static 'assets/account_button.svg' %}" alt=""></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup"></div> 
+        {% endblock%}
+        {% block content%}
+            
+        {% endblock %}
+    {% load static %}
+    <script src="{% static 'js/script.js'%}"></script>
+    </body>
+</html>

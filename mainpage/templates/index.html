@@ -1,0 +1,122 @@
+{% extends "base_generic.html"%}
+{% block content%}
+    <main class="main">
+            <div class="first_container">
+                <div class = "first_text_container">
+               
+                <div class="first_star_container">
+                     {% load static %}
+                     <img src="{% static 'assets/first_small_star.png' %}" alt="">
+                     {% load static %}
+                     <img src="{% static 'assets/first_big_star.png' %}" alt="">
+                 </div>
+                    <h1 class="h1_main">make green your favorite home & <br> <b class="h1_changed">Living better</b></h1>
+                    <p class="first_p">Very beautiful plant decorationto make our lives healthy and the home environment so that the almosphere become calmer.</p>
+                <div class="first_link_container">
+                     <a class="first_shop_btn" href="#">Shop now</a>
+                     {% load static %}
+                     <a class="first_explore_btn" href="#">Explore now <img src="{% static 'assets/arrow_button.svg' %}" alt=""></a>
+                 </div>
+                <div class="first_order_container">
+                    <div class="first_order_items">
+                        <p class="first_green_name">250+</p>
+                        <p class="first_slogans">Order everyday</p>
+                    </div>
+                    <div class="first_order_items">
+                        <p class="first_green_name">500+</p>
+                        <p class="first_slogans">On colection</p>
+                    </div>
+                    <div>
+                        <p class="first_green_name">200+</p>
+                        <p class="first_slogans">Sell everyday</p>
+                    </div>
+                </div>
+                <div class="bottom_text_container">
+                   <div class="first_navigation_header">
+                        Where to find
+                        {% load static %}
+                        <img src="{% static 'assets/first_where_arrow.png' %}" alt="">
+                   </div>
+                   <div class="first_social_container">
+                       <p>Google</p>
+                       <p>Instagram</p>
+                       <p>Facebook</p>
+                       <p>Linkedin</p>      
+                       <p>youtube</p>
+                   </div>
+                </div>
+                </div>
+                <div class = "first_img_container"{% load static%}><img class="first_plant_img" src="{% static 'assets/first_plant_img.png' %}" alt=""></div>
+            
+            </div>
+            <div class="second_container">
+                <h2 class="second_h2">Best Seller Products</h2>
+                <p class="second_p">Lorem Ipsum is not simply random text. It has roots in a piece of <br> classical Latin literature</p>
+                <div class="second_container_products">
+                    <div class="alocasia_polly">
+                        {% load static %}
+                        <img id="alocasia_img" src="{% static 'assets/alocasia-polly.png' %}" alt="">
+                        <h2 class="alocasia_header">Alocasia polly</h2>
+                        <p class="alocasia_paragraf">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam, quis <br> nostrud </p>
+                        <a class="alocasia_btn" href="#">$45.15 <b>Add to cart</b></a>
+                    </div>
+                    <div class="peace_lily">
+                        {% load static %}
+                        <img id="peace_img" class="second_container_images peace_img" src="{% static 'assets/peace-lily.png' %}" alt="">
+                        <h2 class="peace_header">Peace lily</h2>
+                        <p class="peace_paragraf">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="camille_lily">
+                        {% load static %}
+                        <img class="second_container_images camille_img" src="{% static 'assets/camille-plant.png' %}" alt="">
+                        <h2 class="camille_header">Camille Lily</h2>
+                        <p class="camille_paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                    </div>
+                </div>
+            </div>
+            <div class="third_container">
+                <div class="third_img_container">
+                    {% load static %}
+                    <img src="{% static 'assets/third_container_img.png' %}" alt="">
+                </div>
+                <div class="third_text_container">
+                    <h3 class="third_h3">If you love garden <br> you’ll love Spring and <br> our team</h3>
+                    <p class="third_p">Welcome the new season with the plants that <br> are raring to go. We’ve worked out which plants <br> go well together so you can just plant up in your <br> garden for instant impact and grow fastly.</p>
+                    <a class="third_btn" href="#">View more</a>
+                </div>    
+            </div>
+        </div>
+        <div class="fourth_container">
+            <div class="quality_products fourth_container_products">
+                {% load static %}
+                <img src="{% static 'assets/fourth_quality_products_img.png' %}" alt="">
+                <h4 class="quality_products_header fourth_container_headers">Quality Products</h4>
+                <p class="quality_products_paragraf fourth_container_paragraf">Join us for one of our open days <br> and find a plant and quality <br> product that suit for your garden.</p>
+                </div>
+            <div class="always_fresh fourth_container_products">
+                 {% load static %}
+                 <img src="{% static 'assets/fourth_always_fresh_img.png' %}" alt="">
+                 <h4 class="always_fresh_header fourth_container_headers">Always Fresh</h4>
+                 <p class="always_fresh_paragraf fourth_container_paragraf">Make your garden a place to sit <br> back and enjoy by adding a <br> comfortable garden bench for <br> relaxing</p>
+                 </div>
+            <div class="excellent_services fourth_container_products">
+                 {% load static %}
+                 <img src="{% static 'assets/fourth_excellent_services.png' %}" alt="">
+                 <h4 class="excellent_services_header fourth_container_headers">Excellent Services</h4>
+                 <p class="excellent_services_paragraf fourth_container_paragraf">Our edited collection ranges <br> from plant gifts to treats for the <br> home, that help you find the <br> ideal gift..</p>
+            </div>
+        </div>
+        <div class="fifth_container">
+             <div class="fifth_text_container">
+                 <h3 class="fifth_container_header">Collection of plants</h3>
+                 <a class="fifth_container_btn" href="#">Shop now</a>
+             </div>
+             <div class="fifth_img_container">
+                 {% load static %}
+                 <img src="{% static 'assets/fifth_container_img.png' %}" alt="">
+             </div>
+        </div>         
+    </main>
+    <footer> 
+    </footer>
+{% endblock %}
